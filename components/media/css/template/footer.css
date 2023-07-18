@@ -1,0 +1,16 @@
+footer {
+    height: 50px;
+    background: var(--footerBG) !important;
+    z-index: 7;
+    position: relative;
+}
+
+footer p {
+    font-family: SpaceMono400;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}

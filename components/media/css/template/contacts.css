@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    --background: rgb(10, 10, 10);
+    background: var(--background);
+    --footerBG: var(--background);
+    --navBG: transparent;
+}

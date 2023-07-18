@@ -1,0 +1,7 @@
+body {
+    --mainColor: #19181C;
+    --viewProjectHoverColor: #5e5b678f;
+    --headerBG: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/components/media/img/mockup-bg/tpc.jpg);
+    --headerPOS: top;
+
+}

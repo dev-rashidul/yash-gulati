@@ -1,0 +1,141 @@
+nav {
+    height: 70px;
+    background: var(--navBG);
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 250ms all linear;
+    top: 0;
+}
+
+nav.scrolled {
+    background: #000 !important;
+    transition: background-color 200ms linear;
+}
+
+nav .logo {
+    position: relative;
+    left: 50px;
+}
+
+nav .links {
+    position: relative;
+    display: flex;
+    right: 50px;
+}
+
+nav .logo img {
+    height: 26px;
+}
+
+nav .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin-left: 25px;
+    letter-spacing: 3px;
+    position: relative;
+    font-family: Poppins200;
+}
+
+nav .links a .line {
+    width: 0;
+    transition: 250ms all linear;
+    height: 1px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+}
+
+nav .links a:hover .line {
+    width: 100%;
+}
+
+.hamburger {
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.ham-line {
+    height: 2px;
+    border-radius: 10px;
+    background: white;
+    margin-top: 6px;
+}
+
+.ham-line-one {
+    width: 14px;
+    transition: 250ms all linear;
+    transition-delay: 100ms;
+}
+
+.ham-line-two {
+    width: 23px;
+    transition: 250ms all linear;
+    transition-delay: 200ms;
+}
+
+.ham-line-three {
+    width: 14px;
+    position: relative;
+    left: 9px;
+    transition: 250ms all linear;
+    transition-delay: 300ms;
+}
+
+.ham-line-one.anim {
+    transform: rotate(-30deg) translate(3px, -2px);
+    width: 12px;
+}
+
+.ham-line-two.anim {
+    transform: rotate(-30deg);
+    margin-top: 0;
+}
+
+.ham-line-three.anim {
+    transform: rotate(-30deg) translate(10px, 3px);
+    width: 12px;
+    left: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 70px);
+        top: 70px;
+        position: fixed !important;
+        left: 100vw !important;
+        width: 100vw;
+        transition: 450ms all linear;
+        transition-delay: 500ms;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--navBG);
+    }
+
+    .links.anim {
+
+        left: 0 !important;
+    }
+
+    .links a {
+        margin-top: 90px;
+    }
+}
