@@ -498,6 +498,10 @@ New CSS
   padding: 20px 0;
 }
 
+footer {
+  z-index: 999;
+}
+
 /* ===========***============
 Responsive CSS
 ===========***============ */
@@ -625,6 +629,10 @@ Responsive CSS
 
   #viewport {
     height: 50vh;
+  }
+
+  .inner-viewport {
+    width: 90vw;
   }
 
   .proj-description-left {
