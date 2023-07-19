@@ -1,17 +1,140 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    --background: rgb(10, 10, 10);
-    background: var(--background);
-    --footerBG: var(--background);
-    --navBG: var(--background);
+  margin: 0;
+  --background: rgb(10, 10, 10);
+  background: var(--background);
+  --footerBG: var(--background);
+  --navBG: var(--background);
 }
 
-
 main {
-    position: relative;
-    top: 100px;
+  position: relative;
+  top: 100px;
+}
+
+/* ===========***============
+New CSS
+===========***============ */
+
+.single-work-container {
+  max-width: 92vw;
+  width: 100%;
+  margin: auto;
+}
+
+.single-work-number {
+  position: relative;
+  margin-bottom: -130px;
+  z-index: 1;
+}
+
+.single-work-number h1 {
+  font-family: "Poppins600";
+  font-size: 150px;
+  color: #fff;
+  margin: 0;
+}
+
+.work-card-img {
+  position: relative;
+  background: #36383e;
+  padding: 50px;
+  border-radius: 40px;
+  z-index: 2;
+}
+
+.work-card-img img {
+  max-width: 100%;
+  width: 100%;
+  min-height: 800px;
+  max-height: 800px;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.work-card-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0 60px;
+}
+
+.work-card-title,
+.work-card-desc,
+.work-card-info {
+  max-width: 33%;
+  width: 100%;
+}
+
+.work-card-title h2 {
+  font-family: "Poppins500";
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+
+.work-card-desc p {
+  font-family: "Poppins400";
+  font-size: 16px;
+  color: #bdbdbd;
+  margin: 0;
+}
+
+.work-card-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 45px;
+  background: #26262a;
+  border-radius: 100%;
+}
+
+.work-card-link a svg {
+  font-size: 30px;
+  color: #fff;
+}
+
+.work-card-info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.project-info-wrapper {
+  width: 100%;
+}
+
+.project-info {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.project-info-left {
+  max-width: 100px;
+  width: 100%;
+}
+
+.project-info-left h6 {
+  font-family: "Poppins600";
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+.project-info-right p {
+  font-family: "Poppins300";
+  font-size: 15px;
+  color: #bdbdbd;
+  margin: 0;
+}
+
+section {
+  position: sticky;
+  top: 0;
 }
