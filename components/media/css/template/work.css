@@ -199,8 +199,8 @@ Responsive CSS
   .work-card-img img {
     max-width: 100%;
     width: 100%;
-    min-height: 180px;
-    max-height: 180px;
+    min-height: 190px;
+    max-height: 190px;
     height: 100%;
     border-radius: 30px;
   }
@@ -218,7 +218,7 @@ Responsive CSS
   }
 
   .work-card-img {
-    padding: 20px;
+    padding: 10px;
   }
 
   .work-card-title,
