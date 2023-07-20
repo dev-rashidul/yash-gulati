@@ -27,7 +27,7 @@ New CSS
 
 .single-work-number {
   position: relative;
-  margin-bottom: -130px;
+  margin-bottom: -110px;
   z-index: 1;
 }
 
@@ -134,7 +134,108 @@ New CSS
   margin: 0;
 }
 
-section {
-  position: sticky;
-  top: 0;
+/* ===========***===========
+Responsive CSS
+===========***=========== */
+
+/* Min Width 1200px and Max Width 1399px */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .work-card-img img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 700px;
+    max-height: 700px;
+    height: 100%;
+  }
+}
+
+/* Min Width 992px and Max Width 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .work-card-img img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
+    height: 100%;
+  }
+}
+
+/* Min Width 768px and Max Width 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .work-card-img img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    height: 100%;
+  }
+
+  .work-card-content-container {
+    flex-direction: column;
+  }
+
+  .work-card-title,
+  .work-card-desc,
+  .work-card-info {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .work-card-desc {
+    padding: 20px 0 30px;
+  }
+
+  .work-card-info {
+    padding-left: 0;
+  }
+}
+
+/* Min Width 300px and Max Width 767px */
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .work-card-img img {
+    max-width: 100%;
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    height: 100%;
+  }
+
+  .work-card-content-container {
+    flex-direction: column;
+  }
+
+  .single-work-number {
+    margin-bottom: -70px;
+  }
+
+  .single-work-number h1 {
+    font-size: 100px;
+  }
+
+  .work-card-img {
+    padding: 20px;
+  }
+
+  .work-card-title,
+  .work-card-desc,
+  .work-card-info {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .work-card-title h2 {
+    font-size: 30px;
+  }
+
+  .work-card-desc {
+    padding: 20px 0 30px;
+  }
+
+  .work-card-info {
+    padding-left: 0;
+  }
 }
